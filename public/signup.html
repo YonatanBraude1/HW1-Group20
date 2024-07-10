@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
+        <h2 class="text-2xl font-bold text-center py-4 bg-blue-500 text-white">Sign Up</h2>
+        <form id="signupForm" class="p-4">
+            <div class="container">
+                <label for="signupFirstName" class="block"><b>First Name:</b></label>
+                <input type="text" id="signupFirstName" placeholder="Enter First Name" name="firstName" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="signupLastName" class="block mt-4"><b>Last Name:</b></label>
+                <input type="text" id="signupLastName" placeholder="Enter Last Name" name="lastName" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="signupEmail" class="block mt-4"><b>Email:</b></label>
+                <input type="email" id="signupEmail" placeholder="Enter Email" name="email" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="signupPhone" class="block mt-4"><b>Phone:</b></label>
+                <input type="tel" id="signupPhone" placeholder="Enter Phone Number" name="phone" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="signupPassword" class="block mt-4"><b>Password:</b></label>
+                <input type="password" id="signupPassword" placeholder="Enter Password" name="password" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="signupConfirmPassword" class="block mt-4"><b>Confirm Password:</b></label>
+                <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" name="confirmPassword" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <button type="submit"
+                    class="submit-btn bg-blue-500 text-white px-6 py-3 mt-4 rounded-md uppercase w-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

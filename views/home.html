@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">   
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 light-mode">
+    <header class="bg-white shadow p-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">Trending News</h1>
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                <div class="relative w-full md:w-auto">
+                    <input type="text" placeholder="Search..." class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none">
+                    <button class="w-full md:w-auto px-4 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600">Search</button>
+                </div>
+                <nav class="w-full md:w-auto">
+                    <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                        <li><a href="#" class="hover:text-blue-500" onclick="showScreen('home')">Home</a></li>
+                        <li><a href="login.html" class="hover:text-blue-500" onclick="showScreen('login')">Log In</a></li>
+                        <li><a href="signup.html" class="hover:text-blue-500" onclick="showScreen('signup')">Sign Up</a></li>
+                        <li><a href="#" class="hover:text-blue-500" onclick="toggleMode()">Toggle Mode</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow container mx-auto p-4">
+        <div id="news-data"></div>
+        <!-- Dynamic content will be injected here -->
+       
+
+
+        <!--addddd-->
+    </div>
+    
+
+    </main>
+    <footer class="bg-blue-200 text-center py-8 mt-auto">
+        <p class="text-base md:text-lg">Stay informed with Trending News, your trusted source for timely and accurate news coverage. Explore breaking stories, in-depth analysis, and stay connected with the world around you.</p>
+        <p class="text-base md:text-lg mt-4">Follow us for the latest updates:</p>
+        <div class="mt-4">
+            <a href="https://www.facebook.com/login/" target="_blank" class="text-blue-700 hover:underline mr-4">Facebook</a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" class="text-blue-700 hover:underline">Instagram</a>
+        </div>
+        <p class="text-sm mt-8">&copy; <span id="year"></span> Trending News. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

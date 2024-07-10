@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
+        <h2 class="text-2xl font-bold text-center py-4 bg-blue-500 text-white">Login</h2>
+        <form id="loginForm" class="p-4">
+            <div class="container">
+                <label for="uname" class="block"><b>Username :</b></label>
+                <input id="username" type="text" placeholder="Enter Username" name="uname" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <label for="psw" class="block mt-4"><b>Password :</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required
+                    class="input-field block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <button type="submit"
+                    class="submit-btn bg-blue-500 text-white px-6 py-3 mt-4 rounded-md uppercase w-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Login
+                </button>
+                <button type="button" onclick="loginWithoutAccount()"
+                    class="submit-btn bg-gray-300 text-gray-800 px-6 py-3 mt-2 rounded-md uppercase w-full hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                    Login without account
+                </button>
+                <label class="mt-4 flex items-center">
+                    <input type="checkbox" checked="checked" name="remember"
+                        class="form-checkbox h-4 w-4 text-blue-500 rounded focus:ring-blue-500">
+                    <span class="ml-2 text-gray-600">Remember me</span>
+                </label>
+            </div>
+            <div class="container bg-gray-200 py-2">
+                <a href="#" class="text-blue-500">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
